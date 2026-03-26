@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GE-mail API Service</title>  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top, #1a0000, #000000);
+      color: white;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 40px rgba(255, 0, 0, 0.25);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #ff2e2e;
+      text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+      margin-bottom: 15px;
+      animation: glow 2s infinite alternate;
+    }
+
+    p {
+      font-size: 16px;
+      color: #ccc;
+      letter-spacing: 1px;
+    }
+
+    .lock {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #ff2e2e;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff0000; }
+      to { text-shadow: 0 0 25px #ff4d4d; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style></head><body>
+  <div class="container">
+    <div class="lock">🔒</div>
+    <h1>Welcome to GE-mail API Service</h1>
+    <p>This content is private.</p>
+  </div>
+</body>
+</html>
